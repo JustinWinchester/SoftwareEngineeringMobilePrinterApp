@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:helpers="clr-namespace:DemoApp.Helpers"
+             x:Class="PrinterApp.Admin.Views.AdminMainPage"
+             xmlns:vm ="clr-namespace:PrinterApp.Admin.ViewModels"
+             Visual="Material"> 
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <MediaElement Source="ms-appx:///Printer.mp4" AutoPlay="True"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          Aspect="AspectFill"
+                          IsLooping="True"
+                          />
+            <Grid Padding="20" VerticalOptions="Center" Opacity="0.6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                    <StackLayout Grid.Row="0" VerticalOptions="Center" >
+                    <ImageButton Source="arrowleft.png,Size=30, Color=White}"
+                Grid.Row="0" HorizontalOptions="Start" Aspect="AspectFit"
+                VerticalOptions="Start" Margin="10,30" Clicked="ImageButton_Clicked" />
+                    <Label Text="Printers R US" FontFamily="CabinSketch"
+                       TextColor="White"
+                           FontAttributes="Bold" FontSize="40" HorizontalOptions="Center" />
+
+
+                    <Label Text="Admin-Register/Add New Users" FontFamily="CabinSketch"
+                        TextColor="Purple" FontSize="30" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Spacing="1">
+                    <Entry Placeholder="Enter UserName" Text="{Binding Username}"/>
+                    <Entry Placeholder="Enter PassWord" Text="{Binding Password}" IsPassword="True" />
+                    
+
+
+                        <Button Text="Register" HorizontalOptions="Center" BackgroundColor="DarkOrange"
+                        TextColor="AntiqueWhite" WidthRequest="300" HeightRequest="60" CornerRadius="20"
+                        Command="{Binding RegisterCommand}"
+                        />
+                    <Button Text="Go 2 Admin Page2" HorizontalOptions="Center"
+                                    CornerRadius="20"
+                                   BackgroundColor="{AppThemeBinding Light={StaticResource LightInfoButtonColor}, Dark={StaticResource DarkInfoButtonColor}}"
+                                   Command="{Binding GotoAdminPage2Command}" />
+                    
+
+                        
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

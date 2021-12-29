@@ -1,0 +1,16 @@
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\bin\Debug\netstandard2.0\PrinterApp.deps.json
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\bin\Debug\netstandard2.0\PrinterApp.dll
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\bin\Debug\netstandard2.0\ref\PrinterApp.dll
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\bin\Debug\netstandard2.0\PrinterApp.pdb
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\PrinterApp.csprojAssemblyReference.cache
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\PrinterApp.AssemblyInfoInputs.cache
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\PrinterApp.AssemblyInfo.cs
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\PrinterApp.dll
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\ref\PrinterApp.dll
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\PrinterApp.pdb
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\PrinterApp.csproj.CoreCompileInputs.cache
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\Views\LoginView.xaml.g.cs
+C:\Users\justi\source\repos\PrinterApp\PrinterApp\PrinterApp\obj\Debug\netstandard2.0\Views\ProductsView.xaml.g.cs

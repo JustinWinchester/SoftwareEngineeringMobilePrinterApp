@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  Title="Admin Login"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrinterApp.Admin.Views.AdminLogin">
+    
+    <ContentPage.Content>
+        
+        
+        
+        <StackLayout Margin="30,0" Orientation="Vertical" Spacing="30" VerticalOptions="StartAndExpand">
+            <ImageButton Source="arrowleft.png,Size=30, Color=White}"
+                Grid.Row="0" HorizontalOptions="Start" Aspect="AspectFit"
+                VerticalOptions="Start" Margin="10,30" Clicked="ImageButton_Clicked" />
+            <Image Source="loginicon.png" VerticalOptions="CenterAndExpand"/>
+            <Entry Placeholder="Enter User Name" Text="{Binding UserName}"/>
+            <Entry IsPassword="True" Placeholder="Enter User Password" Text="{Binding Password}"/>
+            <Button CornerRadius="20" Text="Admin Login" Command="{Binding LoginAdmin}" BackgroundColor="Black" TextColor="White"/>
+            <Button CornerRadius="20" Margin="0,50,0,0"  Clicked="Button_Clicked" Text="Register new Admin" TextColor="White" BackgroundColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:helpers="clr-namespace:DemoApp.Helpers"
+             x:Class="PrinterApp.Admin.Views.AdminPage2"
+             xmlns:vm ="clr-namespace:PrinterApp.Admin.ViewModels"
+             Visual="Material">
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <MediaElement Source="ms-appx:///Printer.mp4" AutoPlay="True"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          Aspect="AspectFill"
+                          IsLooping="True"
+                          />
+            <Grid Padding="20" VerticalOptions="Center" Opacity="0.6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" VerticalOptions="Center" >
+                    <ImageButton Source="arrowleft.png,Size=30, Color=White}"
+                Grid.Row="0" HorizontalOptions="Start" Aspect="AspectFit"
+                VerticalOptions="Start" Margin="10,30" Clicked="ImageButton_Clicked" />
+                    <Label Text="Printers R US" FontFamily="CabinSketch"
+                       TextColor="White"
+                           FontAttributes="Bold" FontSize="40" HorizontalOptions="Center" />
+
+
+                  
+                    <Label Text="Add New Productz" FontFamily="CabinSketch"
+                        TextColor="Purple" FontSize="30" HorizontalOptions="Center"/>
+
+
+                    
+                    <Entry Placeholder="Enter Product ID" Text= " {Binding ProductID}" />
+                    <Entry Placeholder="Enter CategoryID" Text="{Binding CategoryID}"/>
+                    <Entry Placeholder="Enter ImageUrl" Text="{Binding ImageUrl}"/>
+                    <Entry Placeholder="Enter Name" Text= "{Binding Name}"/>
+                    <Entry Placeholder="Enter Description" Text="{Binding Description}"/>
+                    <Entry Placeholder="Enter rating" Text= "{Binding Rating}"/>
+                    <Entry Placeholder="Enter rating detail" Text="{Binding RatingDetail}"/>
+                    <Entry Placeholder="Enter HomeSelected" Text="{Binding HomeSelected}"/>
+                    <Entry Placeholder="Enter Price" Text="{Binding Price}"/>
+                    <Label Text="Place Products In Database" />
+                    <Button Text="Manage Products" x:Name="ButtonProducts"
+                    Clicked="ButtonProducts_Clicked"/>
+
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

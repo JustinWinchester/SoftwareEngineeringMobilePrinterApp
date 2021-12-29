@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:helpers="clr-namespace:DemoApp.Helpers"
+            xmlns:vm ="clr-namespace:PrinterApp.ViewModels"
+             x:Class="PrinterApp.Views.LoginView"
+                    Visual="Material">
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <MediaElement Source="ms-appx:///Printer.mp4" AutoPlay="True"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          Aspect="AspectFill"
+                          IsLooping="True"
+                          />
+        <Grid Padding="20" VerticalOptions="Center" Opacity="0.6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" VerticalOptions="Center" >
+                    <Label Text="Printers R US" FontFamily="CabinSketch"
+                       TextColor="White"
+                           FontAttributes="Bold" FontSize="60" HorizontalOptions="Center" />
+                    
+                    
+                    <Label Text="Login Forms! Lets Print" FontFamily="CabinSketch"
+                        TextColor="Purple" FontSize="40" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Spacing="10">
+                    <Entry Placeholder="Enter UserName" Text="{Binding Username}"/>
+                    <Entry Placeholder="Enter PassWord" Text="{Binding Password}" IsPassword="True" />
+                    <Button Text ="Login" HorizontalOptions="Center" BackgroundColor="Purple"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                       Command="{Binding LoginCommand}"
+                        />
+                    <Label Text="New Users Sign Up!!!" />
+                    <Button Text="Register" HorizontalOptions="Center" BackgroundColor="DarkOrange"
+                        TextColor="AntiqueWhite" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="{Binding RegisterCommand}"
+                        />
+                </StackLayout>
+            </Grid>
+        </Grid>
+        </ContentPage.Content>
+</ContentPage>
